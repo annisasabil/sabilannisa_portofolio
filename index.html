@@ -1,255 +1,331 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annisa Sabillah | Android Development</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annisa Sabillah | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
-    <!-- Navigation -->
+
+  <!-- ================= NAVBAR ================= -->
+  <header>
     <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">sabilannisa</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
+      <div class="logo">
+        <div class="logo-circle">Sa</div>
+        <div>
+          <h3>sabillannisa</h3>
+          <p>Mobile Developer</p>
         </div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="CV_Annisa_Sabillah.pdf" class="download-btn">Download CV <i class="fa-solid fa-download"></i></a>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Annisa Sabillah</span></h1>
-                <h2>Android Development</h2>
-                <p>Building beautiful and functional mobile experiences with Kotlin & Jetpack Compose.</p>
-                <a href="#contact" class="btn btn-primary">Contact Me</a>
-            </div>
-            <div class="hero-image">
-                <img src="profile.png" alt="Profile Photo" class="profile-photo">
-            </div>
-        </div>
-    </section>
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <span class="badge">👋 Hi there, I'm</span>
+      <h1>Annisa <span>Sabillah</span></h1>
+      <h2>Aspiring <span>Mobile Developer</span></h2>
+      <p>A passionate developer who loves building mobile applications that are useful, beautiful, and user-friendly.</p>
 
-    <!-- About Me Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-            </div>
-            <div class="about-container">
-                <div class="about-content">
-                    <h3>Summary</h3>
-                    <p>I'm an passionate Android development with expertise in building modern, scalable mobile applications. I specialize in Kotlin, Jetpack Compose, and following best practices like MVVM architecture.</p>
-                    <div class="about-info">
-                        <div class="info-item">
-                            <i class="fas fa-user"></i>
-                            <span><strong>Name:</strong> Annisa Sabillah</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <span><strong>Email:</strong> sabillahannisa02@gmail.com</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
-                            <span><strong>Phone:</strong> +62 821-1959-2176</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fab fa-github"></i>
-                            <span><strong>GitHub:</strong> github.com/annisasabil</span>
-                        </div>
-                    </div>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="hero-buttons">
+        <a href="#projects" class="project-btn">
+          View My Projects
+          <span><i class="fa-solid fa-angle-right"></i></span>
+        </a>
+        <a href="#contact" class="contact-btn">
+          Contact Me
+          <span><i class="fa-regular fa-envelope"></i></span>
+        </a>
+      </div>
 
-    <!-- My Work Skills Section -->
-    <section class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Work Skills</h2>
-                <p>Technologies and tools I master as an Android Developer</p>
-            </div>
-            <div class="skills-container">
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Kotlin</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Jetpack Compose</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Android SDK</span>
-                        <span>88%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 88%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Room Database</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Retrofit / REST API</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>MVVM Architecture</span>
-                        <span>82%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 82%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="socials">
+        <a href="https://github.com/annisasabil">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/in/annisa-sabillah">
+          <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+        </a>
+        <a href="mailto:sabillahannisa02@gmail.com">
+          <i class="fa-solid fa-envelope"></i> Email
+        </a>
+      </div>
+    </div>
 
-    <!-- My Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Services</h2>
-                <p>What I can do for you</p>
-            </div>
-            <div class="services-container">
-                <div class="service-card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Android App Development</h3>
-                    <p>Custom Android applications using Kotlin and Jetpack Compose with clean architecture.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Database Integration</h3>
-                    <p>Local storage with Room Database and cloud integration with Firebase.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-plug"></i>
-                    <h3>API Integration</h3>
-                    <p>RESTful API integration using Retrofit, Coroutines, and handling network states.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>UI/UX Implementation</h3>
-                    <p>Beautiful Material Design 3 interfaces with smooth animations.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="hero-image">
+    <div class="blob blob-pink"></div>
+    <div class="blob blob-blue"></div>
+    <div class="blob blob-green"></div>
+    <div class="dot-grid"></div>
+    <div class="bubble bubble-code"><i class="fa-solid fa-code"></i></div>
+    <div class="bubble bubble-sparkle"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+    <div class="bubble bubble-phone"><i class="fa-solid fa-mobile-screen-button"></i></div>
+    <span class="dot-ring"></span>
+    <span class="dot-solid"></span>
+    <img src="profile.png" alt="Profile" class="hero-character">
+    </div>
+  </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Projects</h2>
-                <p>Some of my best work</p>
-            </div>
-            <div class="portfolio-container" id="portfolio-container">
-                <!-- Projects will be loaded here by JavaScript -->
-            </div>
-        </div>
-    </section>
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
+    <div class="card about-card">
+      <h2 class="section-title left">About Me</h2>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contact Me</h2>
-                <p>Let's work together!</p>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+62 821-1959-2176</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>sabillahannisa02@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <div>
-                            <h4>GitHub</h4>
-                            <p>github.com/annisasabil</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
-                            <h4>LinkedIn</h4>
-                            <p>linkedin.com/in/annisa-sabillah/</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="tel" placeholder="Your WhatsApp Number" required>
-                    <textarea rows="5" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fab fa-whatsapp"></i> Send via WhatsApp
-                    </button>
-                </form>
-            </div>
+      <div class="about-body">
+        <div class="about-image">
+          <i class="fa-solid fa-code"></i>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 Annisa Sabillah | Android Developer Portfolio. All Rights Reserved.</p>
-                <div class="social-links">
-                    <a href="https://github.com/annisasabil"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/annisa-sabillah/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://t.me/sabilannisa" target="_blank"><i class="fab fa-telegram"></i></a>
-                    <a href="https://instagram.com/annisasabill_" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+        <div class="about-text">
+          <p>
+            An Information Technology graduate with an interest in Mobile Development. 
+            I enjoy learning new things, solving problems, and building applications that benefit many people.
+          </p>
+          <p>
+            I am currently continuing to develop my skills in Flutter for cross-platform development and Kotlin for native Android, 
+            while building personal projects to continue growing.
+          </p>
         </div>
-    </footer>
-    <script src="script.js"></script>
+
+        <div class="about-info">
+          <div class="info-row">
+            <i class="fa-solid fa-graduation-cap icon-blue"></i>
+            <div class="info-text">
+              <h4>Education</h4>
+              <p>Informatics Engineering</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <i class="fa-solid fa-location-dot icon-red"></i>
+            <div class="info-text">
+              <h4>Location</h4>
+              <p>Indonesia</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <i class="fa-solid fa-envelope icon-green"></i>
+            <div class="info-text">
+              <h4>Email</h4>
+              <p>sabillahannisa02@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="skills" id="skills">
+    <h2 class="section-title center">Skills</h2>
+
+    <div class="skills-container">
+      <div class="skill-pill pink">
+        <i class="devicon-flutter-plain colored"></i>
+        <h4>Flutter</h4>
+      </div>
+      <div class="skill-pill blue">
+        <i class="devicon-kotlin-plain colored"></i>
+        <h4>Kotlin</h4>
+      </div>
+      <div class="skill-pill green">
+        <i class="devicon-googlecloud-plain"></i>
+        <h4>REST API</h4>
+      </div>
+      <div class="skill-pill pink">
+        <i class="devicon-firebase-plain colored"></i>
+        <h4>Firebase</h4>
+      </div>
+      <div class="skill-pill blue">
+        <i class="devicon-git-plain colored"></i>
+        <h4>Git</h4>
+      </div>
+      <div class="skill-pill green">
+        <i class="fa-solid fa-paper-plane"></i>
+        <h4>Postman</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="projects" id="projects">
+    <h2 class="section-title center">My Projects</h2>
+
+    <div class="project-container">
+
+      <div class="project-card">
+        <div class="project-thumb thumb-pink">
+          <i class="fa-solid fa-comment"></i>
+        </div>
+        <div class="project-content">
+          <h3>SafeSpace App</h3>
+          <p>A realtime chat application built with Firebase, featuring user registration and a single shared chat room.</p>
+          <div class="tags">
+            <span class="tag pink">Flutter</span>
+            <span class="tag blue">Firebase</span>
+            <span class="tag green">Realtime Chat</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/annisasabil/safe_space" class="view-link pink-text">View Project <i class="fa-solid fa-angle-right"></i></a>
+            <a href="https://github.com/annisasabil" class="repo-btn"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb thumb-blue">
+          <i class="fa-solid fa-utensils"></i>
+        </div>
+        <div class="project-content">
+          <h3>Restaurant Recommendation App</h3>
+          <p>A restaurant recommendation app with favorites, dark/light mode, and lunchtime reminder notifications.</p>
+          <div class="tags">
+            <span class="tag pink">Flutter</span>
+            <span class="tag blue">REST API</span>
+            <span class="tag green">JSON</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/annisasabil/restaurant_app_v4" class="view-link blue-text">View Project <i class="fa-solid fa-angle-right"></i></a>
+            <a href="https://github.com/annisasabil" class="repo-btn"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb thumb-green">
+          <i class="fa-solid fa-people-group"></i>
+        </div>
+        <div class="project-content">
+          <h3>Bangkit Capstone Project</h3>
+          <p>Final capstone project for Bangkit Academy, an Android-based application developed collaboratively over two months.</p>
+          <div class="tags">
+            <span class="tag pink">Kotlin</span>
+            <span class="tag blue">Android</span>
+            <span class="tag green">Teamwork</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/Capstone-CH2-PS278/Mobile-Development" class="view-link green-text">View Project <i class="fa-solid fa-angle-right"></i></a>
+            <a href="https://github.com/Capstone-CH2-PS278/" class="repo-btn"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="see-more">
+      <a href="https://github.com/annisasabil">See More Projects <i class="fa-solid fa-angle-right"></i></a>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section class="experience" id="experience">
+    <h2 class="section-title center">Experience</h2>
+
+    <div class="card timeline-card">
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon pink"><i class="fa-solid fa-rocket"></i></div>
+          <div class="timeline-content">
+            <span class="year pink-text">2023</span>
+            <h4>Bangkit Academy Batch 2</h4>
+            <span class="role pink-text">Mobile Development</span>
+            <p>Gained in-depth knowledge of Android Development using Kotlin and applied it in a team project, successfully delivered as a capstone project at the end of the program.</p>
+          </div>
+        </div>
+
+        <div class="timeline-line">
+          <span class="dot"></span>
+          <span class="dash"></span>
+          <span class="dot"></span>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon blue"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="timeline-content">
+            <span class="year blue-text">2025</span>
+            <h4>Bachelor of Informatics Engineering</h4>
+            <span class="role blue-text">Universitas Islam Negeri Sunan Gunung Djati</span>
+            <p>Completed a Bachelor's degree in Informatics Engineering with a strong foundation in data structures, algorithms, databases, object-oriented programming, and 
+                software engineering, serving as the core foundation for software development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
+    <div class="card contact-card">
+      <div class="contact-left">
+        <h2>Let's Work Together!</h2>
+        <p>I'm open to opportunities. Feel free to reach out!</p>
+        <a href="#contact" class="say-hello-btn">Say Hello <i class="fa-solid fa-paper-plane"></i></a>
+      </div>
+
+      <div class="contact-list">
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope icon-red"></i>
+          <div>
+            <h4>Email</h4>
+            <p>sabillahannisa02@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-linkedin-in icon-blue"></i>
+          <div>
+            <h4>LinkedIn</h4>
+            <p>linkedin.com/in/annisa-sabillah</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-github icon-dark"></i>
+          <div>
+            <h4>GitHub</h4>
+            <p>github.com/annisasabil</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-illustration">
+        <div class="blob blob-green small"></div>
+        <div class="blob blob-blue small"></div>
+        <i class="fa-solid fa-envelope envelope-icon"></i>
+        <i class="fa-solid fa-paper-plane plane-icon"></i>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><i class="fa-solid fa-heart"></i> Annisa Sabillah</p>
+    <p>© 2026 All rights reserved.</p>
+    <p>Built with <i class="fa-solid fa-heart"></i> </p>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
 </body>
 </html>
