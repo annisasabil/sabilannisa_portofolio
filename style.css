@@ -1,4 +1,3 @@
-/* ===== RESET & BASE ===== */
 *{
     margin:0;
     padding:0;
@@ -30,7 +29,6 @@ body{
 
 a{ color:inherit; }
 
-/* ===== SECTION ===== */
 section{
     padding:90px 8%;
     opacity:0;
@@ -75,7 +73,6 @@ section.show{
     box-shadow:var(--shadow);
 }
 
-/* ===== NAVBAR ===== */
 .navbar{
     position:sticky;
     top:0;
@@ -171,7 +168,6 @@ section.show{
     transform:translateY(-2px);
 }
 
-/* ===== HERO ===== */
 .hero{
     min-height:90vh;
     display:flex;
@@ -312,7 +308,6 @@ section.show{
     color:var(--pink);
 }
 
-/* ----- hero illustration ----- */
 .hero-image{
     flex:1;
     display:flex;
@@ -428,7 +423,6 @@ section.show{
     z-index:5;
 }
 
-/* ===== ABOUT ===== */
 .about-card{
     padding:46px;
 }
@@ -479,9 +473,6 @@ section.show{
     margin-left:auto;
 }
 
-
-
-/* ===== SKILLS ===== */
 .skills-container{
     display:flex;
     flex-wrap:wrap;
@@ -1012,10 +1003,12 @@ footer i{
 
     .contact-card{
         flex-direction:column;
+        text-align:left;
+        padding:30px 20px;
     }
 
     .contact-list{
-        width: 100%;
+        width:100%;
     }
 
     .contact-item{
@@ -1024,7 +1017,7 @@ footer i{
     }
 
     .contact-illustration{
-        order:-1;
+        display:none;
     }
 
     footer{
