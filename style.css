@@ -1012,7 +1012,10 @@ footer i{
 
     .contact-card{
         flex-direction:column;
-        text-align:center;
+    }
+
+    .contact-list{
+        width: 100%;
     }
 
     .contact-item{
